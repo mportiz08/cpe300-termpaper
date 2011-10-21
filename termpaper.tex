@@ -14,7 +14,7 @@
 \begin{document}
 
 % Title
-\title{\vfill Firesheep: Burning Through Web Security}
+\title{\vfill Firesheep: Setting Web Security Ablaze}
 \author{
 Marcus Ortiz\vspace{10pt} \\
 CPE 300\vspace{10pt} \\
@@ -57,6 +57,46 @@ Many websites require users to sign in to use their personalized version of the 
 The backend for the tool is written in C++ and uses 3rd party packet capturing software \cite{github}. Packet capturing software is not new and has been around for a while--\emph{Firesheep} parses these packets in a way that reveals the information about cookies that can be found from them. Another component of the tool, called "handlers", allows other developers to add support for specific websites by hooking into a minimal javascript api \cite{github}. In this way, the project is very community based and has potential to target any website that isn't properly protected. As of the the time that this paper is being written, there are 31 well-known sites that have "handlers" associated with them \cite{github}. Some of these sites are the most popular in existence \cite{alexa}.
 
 \subsection{Firesheep: Why?}
+Butler's aim with this project is to create a greater public awareness of the general lack of security that has permeated some of the world's most visited websites. Specifically, he believes that \emph{the only effective fix for this problem is full end-to-end encryption, known on the web as HTTPS or SSL} \cite{codebutler_main}. His purpose in releasing \emph{Firesheep} to the public is to show how easily "session hijacking" can be achieved, so that the need for SSL encryption will be realized and action will be taken to better protect the privacy of internet users.
+
+\section{Research Question}
+Was Eric Butler's decision to release \emph{Firesheep} an ethical one?
+
+This question is important, because it deals with the flawed security of sites that the average person uses everyday. The costs of poor security heavily affect these people. Facebook, for example, is the 2nd most visited site in the world \cite{alexa}. It is also a supported site with \emph{Firesheep} \cite{github}. Some people would argue that it isn't acceptable to release a tool that makes it so easy to access such private content. On the other hand,  some people would point out that is a necessary step to get these companies like Facebook to focus on protecting their users' privacy.
+
+\section{Arguments For}
+\subsection{Help the Users Win}
+TODO
+\subsection{Improving Awareness}
+TODO
+
+\section{Arguments Against}
+\subsection{Legal Issues}
+TODO
+\subsection{Privacy Exploitation}
+TODO
+
+\section{Analysis}
+\subsection{SE Code Principle One: Public}
+\subsubsection{SE Code 1.02}
+TODO
+\subsubsection{SE Code 1.04}
+TODO
+\subsubsection{SE Code 1.05}
+TODO
+\subsubsection{SE Code 1.08}
+TODO
+\subsection{SE Code Principle Four: Judgement}
+\subsubsection{SE Code 4.01}
+TODO
+\subsection{SE Code Principle Six: Profession}
+\subsubsection{SE Code 6.03}
+TODO
+\subsubsection{SE Code 6.06}
+TODO
+
+\section{Conclusion}
+TODO
 
 % Bibliography
 \end{multicols}
