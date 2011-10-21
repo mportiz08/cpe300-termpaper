@@ -42,7 +42,21 @@ By looking to the  ACM and IEEE-CS approved \emph{Software Engineering Code of E
 \begin{multicols}{2}
 \setcounter{page}{1}
 
-\section{Background}
+\section{Known Facts}
+\subsection{Background}
+Last October, a freelance web application and software developer by the name of Eric Butler released a tool called \emph{Firesheep} to the world during the 12th annual \emph{Toorcon} conference in San Diego \cite{codebutler_main}. \emph{Firesheep} provides a graphical user interface that allows users to "hijack" web sessions from others on the same public wifi network. Toorcon is an event held in different cities that brings together some of the top experts on security to learn and discuss the state of the field among peers \cite{toorcon}. Releasing this software at \emph{Toorcon} was not an accident--Butler presented a talk to go along with the release of \emph{Firesheep} in which he describes his purpose for creating it. His intent was to call attention to the security weaknesses of many websites in an effort to promote improved security for these websites and the web in general. This controversial tool fittingly set the world of web security ablaze within weeks of its release. Public reaction to it was highly polarized and continues to be.
+
+\subsection{Firesheep: What?}
+Butler's tool was developed as a free, open source add-on for the popular web browser \emph{Firefox}. Once the add-on has been installed on a user's machine, it can be accessed directly through the web browser as a sidebar. Opening this sidebar will provide the user with the option to "Start Capturing". When a user presses this button, the tool will begin scanning the web traffic from all other computers that happen to be using the same public wifi network. Whenever one of these computers accesses a website that \emph{Firesheep} supports, the name and photo of the user interacting with the site will appear in the sidebar. Here is where it gets interesting: if one of these photos is double-clicked on, then the \emph{Firesheep} user will log into that site with the credentials of the user from the other computer. \cite{codebutler_main}
+
+As an example, let's assume that user Alice has installed \emph{Firesheep} on her computer and is using it. User Bob happens to be using the same wifi network as Alice, and he logs onto the http destination for Facebook. Alice will now see Bob's name and profile photo on her computer. When she double-clicks on this, she'll be taken to Facebook and logged in as Bob on her computer. Alice has now effectively stolen Bob's facebook identity with a few simple clicks. This process is known as "session hijacking" \cite{hijacking}.
+
+\subsection{Firesheep: How?}
+Many websites require users to sign in to use their personalized version of the site. To accomplish this, the website sends your computer a "cookie" when you sign in with the right username and password combination. These (unfortunately inedible) cookies are text files that are used to identify the user's session on the site \cite{codebutler_main}. Unless this website is using encryption technologies, these cookies can be easily intercepted and read across any public wifi network with the help of a "packet sniffer". This is the core technology that \emph{Firesheep} is based on.
+
+The backend for the tool is written in C++ and uses 3rd party packet capturing software \cite{github}. Packet capturing software is not new and has been around for a while--\emph{Firesheep} parses these packets in a way that reveals the information about cookies that can be found from them. Another component of the tool, called "handlers", allows other developers to add support for specific websites by hooking into a minimal javascript api \cite{github}. In this way, the project is very community based and has potential to target any website that isn't properly protected. As of the the time that this paper is being written, there are 31 well-known sites that have "handlers" associated with them \cite{github}. Some of these sites are the most popular in existence \cite{alexa}.
+
+\subsection{Firesheep: Why?}
 
 % Bibliography
 \end{multicols}
