@@ -106,20 +106,26 @@ Another U.S. law that relates to \emph{Firesheep}'s use is titled \emph{Intercep
   \emph{any person who...intentionally intercepts, endeavors to intercept, or procures any other person to intercept or endeavor to intercept, any wire, oral, or electronic communication...shall be punished as provided...} \cite{law_2}
 \end{quote}
 
-This law is even more applicable to the tool. It specifically defines the interception of "electronic communication" as being illegal. \emph{Firesheep}'s backend is based on a "packet sniffer" \cite{github}, which does exactly this. "Packet sniffers" intercept packets that are transmitted across computer networks. Since Butler's software is powered by this kind of technology, the case can be made that he engaged in an unethical practice by releasing it. His plan for the tool could be interpreted as an "endeavor to intercept" this digital data, and therefore presents not only an ethical dilemma, but also a legal concern. 
-%\subsection{Privacy Exploitation}
-%TODO
+This law is even more applicable to the tool. It specifically defines the interception of "electronic communication" as being illegal. \emph{Firesheep}'s backend is based on a "packet sniffer" \cite{github}, which does exactly this. "Packet sniffers" intercept packets that are transmitted across computer networks. Since Butler's software is powered by this kind of technology, the case can be made that he engaged in an unethical practice by releasing it. His plan for the tool could be interpreted as an "endeavor to intercept" this digital data, and therefore presents not only an ethical dilemma, but also a legal concern.
+\subsection{Privacy Exploitation}
+Recently, a pair of researchers at Bell Labs conducted an experiment with a version of \emph{Firesheep} that they modified. This experiment involved tracking volunteers' usage of google search with the tool. The two researchers were able to successfully recover up to 80 percent of the participants' personal click history on google. This proof of concept showed how \emph{Firesheep} can be used to exploit one's privacy. Google.com, the world's most visited site \cite{alexa}, is a website that is used by millions of people on a regular basis. Also, with the increasingly digital times, it is very common for people to work on their laptops on public wifi spots such as coffee shops. This combination makes for an incredibly vulnerable target that \emph{Firesheep} is designed to take advantage of. If this software gets into the wrong hands, it could easily be used to harm a large number of individuals. With this possible, it seems like labeling the release of \emph{Firesheep} as ethical might be a mistake. 
 
 \section{Analysis}
-%\subsection{SE Code Principle One: Public}
-%\subsubsection{SE Code 1.02}
-%TODO
-%\subsubsection{SE Code 1.04}
-%TODO
-%\subsubsection{SE Code 1.05}
-%TODO
-%\subsubsection{SE Code 1.08}
-%TODO
+\subsection{SE Code Principle One: Public}
+\subsubsection{SE Code 1.02}
+TODO
+\subsubsection{SE Code 1.04}
+Eric Butler's purpose with the release of \emph{Firesheep} was to warn users of how insecure the websites that they regularly use are. This goal matches up with section 1.04 of the SE code, which states:
+
+\begin{quote}
+  \textbf{1.04} [software engineers shall] \emph{disclose to appropriate persons or authorities any actual or potential danger to the user, the public, or the environment, that they reasonably believe to be associated with software or related documents} \cite{se_code}
+\end{quote}
+
+In this case, the "appropriate persons" are both the people who run these insecure websites and the users of these websites. The "potential danger" to the public is discussed in Butler's blog post, which details the problems associated with not using full site-wide https/ssl encryption for sessions. By not providing their users with appropriate encryption options, these sites can potentially harm them. Butler is attacking this by using his tool to "disclose" this information by showing how easily this lack of encryption can be taken advantage of. 
+\subsubsection{SE Code 1.05}
+TODO
+\subsubsection{SE Code 1.08}
+TODO
 \subsection{Judgement}
 \subsubsection{SE Code 4.01}
 When Eric Butler made the decision to release \emph{Firesheep}, did he consider the impact that this decision would have on others? According to the SE Code of Ethics, this is something that should have been done. It states:
@@ -148,14 +154,14 @@ According to the software's creator, his aim is not to threaten privacy. His int
 Unfortunately, this issue is not black and white--there is definitely a moral gray area regarding privacy here. In order to gain a bigger focus on privacy in the future, it seems as if Butler is sacrificing others' more immediate need for privacy. From a strictly utilitarianistic perspective, Butler's actions could be seen as an "overall good" that benefits human values due to the long-term outcome of the software's release. On the other hand, his actions could be seen as harmful, especially as it relates to people who are unaware of their lack of privacy on these websites.
 
 Ultimately, Butler \emph{did} have these issues in mind before he released the tool \cite{codebutler_main}. SE Code 4.01 says that software engineers should "temper their judgements" by the need to support these values \cite{se_code}. Eric Butler has indeed done this. His judgement to release \emph{Firesheep} was motivated by his efforts to support the privacy of the general "internet-using" population \cite{codebutler_main}, even if it may come at the cost of disrupting the privacy of a small set of individuals.
-%\subsection{SE Code Principle Six: Profession}
-%\subsubsection{SE Code 6.03}
-%TODO
-%\subsubsection{SE Code 6.06}
-%TODO
+\subsection{SE Code Principle Six: Profession}
+\subsubsection{SE Code 6.03}
+TODO
+\subsubsection{SE Code 6.06}
+TODO
 
-%\section{Conclusion}
-%TODO
+\section{Conclusion}
+TODO
 
 % Bibliography
 \end{multicols}
