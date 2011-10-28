@@ -64,15 +64,49 @@ Was Eric Butler's decision to release \emph{Firesheep} an ethical one?
 
 This question is important, because it deals with the flawed security of sites that the average person uses everyday. The costs of poor security heavily affect these people. Facebook, for example, is the 2nd most visited site in the world \cite{alexa}. It is also a supported site with \emph{Firesheep} \cite{github}. Some people would argue that it isn't acceptable to release a tool that makes it so easy to access such private content. On the other hand,  some people would point out that is a necessary step to get these companies like Facebook to focus on protecting their users' privacy.
 
-%\section{Arguments For}
-%\subsection{Help the Users Win}
-%TODO
-%\subsection{Improving Awareness}
-%TODO
+\section{Arguments For}
+\subsection{Helping the Users Win}
+As Eric Butler  puts it, \emph{my hope is that Firesheep will help the users win} \cite{codebutler_main}. His major aim in releasing the software is to expose the vulnerability of popular websites, which, he hopes, will encourage these sites to improve the experiences for their users. In his opinion, \emph{websites have a responsibility to protect the people who depend on their services} \cite{codebutler_main}.
 
-%\section{Arguments Against}
-%\subsection{Legal Issues}
-%TODO
+Currently, there are several factors that contribute to a website's insecurity: \cite{codebutler_blog_1}
+\begin{itemize}
+  \item
+  the lack of https/ssl encryption for the site
+  \item
+  forcing users to pay for https/ssl encryption
+  \item
+  using https/ssl encryption only for posting login credentials
+  \item
+  flawed use of https/ssl encryption
+\end{itemize}
+
+When a major website is lacking in one of these areas, the users of that website can potentially be exploited. Thus, by implementing a handler for this site using \emph{Firesheep}, this problem can get the attention that it deserves and therefore must be addressed by the site's owners.
+
+There are several examples of this happening in the weeks after \emph{Firesheep} was released. GitHub, a website for social coding, initially was in the category of only using https/ssl encryption for paying users. Upon \emph{Firesheep}'s release, GitHub became immediately aware of the potential harm that could come to their users by not improving their security measures. In a series of three blog posts, the company describes how they acted quickly to provide full end-to-end encryption for both paying and non-paying users as a direct response to the awareness created by Butler's tool \cite{github_reaction}.
+
+Another major website to respond to \emph{Firesheep} was Facebook. Although they weren't as quick to react as GitHub, they too realized the significance of better protecting their users due to the publicity created by Butler's tool. In January 2011, Facebook implemented site-wide https/ssl encryption for their users \cite{facebook_reaction}.
+
+Twitter was another huge website that previously only used https/ssl encryption for logging in users. As of March 2011, Twitter has followed in the footsteps of GitHub and Facebook in providing their users with the ability to fully encrypt their sessions with the site \cite{twitter_reaction}.
+
+These are only some of the most publicized instances of \emph{Firesheep}'s positive influence on web security. Given these specific cases, it can be argued that Butler's goals with the project have been largely achieved. This greatly improved public awareness supports the claim that Butler's release of the tool was indeed ethical.
+
+\section{Arguments Against}
+\subsection{Legal Issues}
+There is also an argument to be made that Eric Butler's decision to release \emph{Firesheep} was \emph{un}ethical. A major support for this argument comes from the many troubling legal issues that the software could potentially be involved in. The first major law that the use of \emph{Firesheep} could potentially conflict with is titled \emph{Fraud and Related Activity in Connection With Computers} (Title 18, Part 1, Chapter 47, Section 1030) \cite{law_1}. It states:
+
+\begin{quote}
+  \emph{Whoever...intentionally accesses a computer without authorization or exceeds authorized access, and thereby obtains...information from any protected computer...shall be punished as provided...} \cite{law_1}
+\end{quote}
+
+Thus, according to current U.S. Laws, it is possible for a person who uses \emph{Firesheep} to be prosecuted based on their actions with it. Although Butler dismisses the weight that these legal issues hold \cite{codebutler_blog_2}, the stance of the law is clear: using software to access information from other "protected" computers is strictly forbidden.
+
+Another U.S. law that relates to \emph{Firesheep}'s use is titled \emph{Interception and Disclosure of Wire, Oral, or Electronic Communications Prohibited} (Title 18, Part 1, Chapter 119, Section 2511) \cite{law_2}. It states:
+
+\begin{quote}
+  \emph{any person who...intentionally intercepts, endeavors to intercept, or procures any other person to intercept or endeavor to intercept, any wire, oral, or electronic communication...shall be punished as provided...} \cite{law_2}
+\end{quote}
+
+This law is even more applicable to the tool. It specifically defines the interception of "electronic communication" as being illegal. \emph{Firesheep}'s backend is based on a "packet sniffer" \cite{github}, which does exactly this. "Packet sniffers" intercept packets that are transmitted across computer networks. Since Butler's software is powered by this kind of technology, the case can be made that he engaged in an unethical practice by releasing it. His plan for the tool could be interpreted as an "endeavor to intercept" this digital data, and therefore presents not only an ethical dilemma, but also a legal concern. 
 %\subsection{Privacy Exploitation}
 %TODO
 
