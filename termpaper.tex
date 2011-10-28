@@ -14,7 +14,7 @@
 \begin{document}
 
 % Title
-\title{\vfill Firesheep: Setting Web Security Ablaze}
+\title{\vfill Firesheep: Helping the Users Win}
 \author{
 Marcus Ortiz\vspace{10pt} \\
 CPE 300\vspace{10pt} \\
@@ -28,7 +28,7 @@ CPE 300\vspace{10pt} \\
 \begin{abstract}
 On October 24, 2010, a software developer from Seattle named Eric Butler released an open source add-on for the Firefox web browser named \emph{Firesheep}. This add-on allows for users to capture \emph{and use} unencrypted login credentials for anyone on the same open wifi network within two simple mouse clicks \cite{codebutler_main}. Although Butler's intentions with this project are to provide awareness to the urgent need for encrypted web sessions, this clearly presents a moral dilemma to professionals in the computer science and software engineering fields. Can the decision to release this software to the public possibly be considered an ethical one?
 
-By looking to the  ACM and IEEE-CS approved \emph{Software Engineering Code of Ethics and Professional Practice} \cite{se_code} and various other sources, the case can be made that this choice was in fact an ethical one. The \emph{Firesheep} project acts in the interest of the public good by revealing the serious security flaws that exist in many of the Internet's most visited websites \cite{alexa} \cite{github}. It urges the adoption of safer practices to be taken by people using public wifi and promotes action to be taken by companies to secure their site's users, which will ultimately result a better web for everyone.
+By looking to the ACM and IEEE-CS approved \emph{Software Engineering Code of Ethics and Professional Practice} \cite{se_code} and various other sources, the case can be made that this choice was in fact an ethical one. The \emph{Firesheep} project acts in the interest of the public good by revealing the serious security flaws that exist in many of the Internet's most visited websites \cite{alexa} \cite{github}. It urges the adoption of safer practices to be taken by people using public wifi and promotes action to be taken by companies to secure their site's users, which will ultimately result a better web for everyone.
 \end{abstract}
 
 % Table of Contents
@@ -44,7 +44,7 @@ By looking to the  ACM and IEEE-CS approved \emph{Software Engineering Code of E
 
 \section{Known Facts}
 \subsection{Background}
-Last October, a freelance web application and software developer by the name of Eric Butler released a tool called \emph{Firesheep} to the world during the 12th annual \emph{Toorcon} conference in San Diego \cite{codebutler_main}. \emph{Firesheep} provides a graphical user interface that allows users to "hijack" web sessions from others on the same public wifi network. Toorcon is an event held in different cities that brings together some of the top experts on security to learn and discuss the state of the field among peers \cite{toorcon}. Releasing this software at \emph{Toorcon} was not an accident--Butler presented a talk to go along with the release of \emph{Firesheep} in which he describes his purpose for creating it. His intent was to call attention to the security weaknesses of many websites in an effort to promote improved security for these websites and the web in general. This controversial tool fittingly set the world of web security ablaze within weeks of its release. Public reaction to it was highly polarized and continues to be.
+Last October, a freelance web application and software developer by the name of Eric Butler released a tool called \emph{Firesheep} to the world during the 12th annual \emph{Toorcon} conference in San Diego \cite{codebutler_main}. \emph{Firesheep} provides a graphical user interface that allows users to "hijack" web sessions from others on the same public wifi network. Toorcon is an event held in different cities that brings together some of the top experts on security to learn and discuss the state of the field among peers \cite{toorcon}. Releasing this software at \emph{Toorcon} was not an accident--Butler presented a talk to go along with the release of \emph{Firesheep} in which he describes his purpose for creating it. His intent was to call attention to the security weaknesses of many websites in an effort to promote improved security for these websites and the web in general. This controversial tool fittingly set the world of web security ablaze within weeks of its release. Only a year later, and \emph{Firesheep} already has 1,925,376 downloads \cite{github}. Public reaction to the software was highly polarized and continues to be.
 
 \subsection{Firesheep: What?}
 Butler's tool was developed as a free, open source add-on for the popular web browser \emph{Firefox}. Once the add-on has been installed on a user's machine, it can be accessed directly through the web browser as a sidebar. Opening this sidebar will provide the user with the option to "Start Capturing". When a user presses this button, the tool will begin scanning the web traffic from all other computers that happen to be using the same public wifi network. Whenever one of these computers accesses a website that \emph{Firesheep} supports, the name and photo of the user interacting with the site will appear in the sidebar. Here is where it gets interesting: if one of these photos is double-clicked on, then the \emph{Firesheep} user will log into that site with the credentials of the user from the other computer. \cite{codebutler_main}
@@ -108,25 +108,37 @@ Another U.S. law that relates to \emph{Firesheep}'s use is titled \emph{Intercep
 
 This law is even more applicable to the tool. It specifically defines the interception of "electronic communication" as being illegal. \emph{Firesheep}'s backend is based on a "packet sniffer" \cite{github}, which does exactly this. "Packet sniffers" intercept packets that are transmitted across computer networks. Since Butler's software is powered by this kind of technology, the case can be made that he engaged in an unethical practice by releasing it. His plan for the tool could be interpreted as an "endeavor to intercept" this digital data, and therefore presents not only an ethical dilemma, but also a legal concern.
 \subsection{Privacy Exploitation}
-Recently, a pair of researchers at Bell Labs conducted an experiment with a version of \emph{Firesheep} that they modified. This experiment involved tracking volunteers' usage of google search with the tool. The two researchers were able to successfully recover up to 80 percent of the participants' personal click history on google. This proof of concept showed how \emph{Firesheep} can be used to exploit one's privacy. Google.com, the world's most visited site \cite{alexa}, is a website that is used by millions of people on a regular basis. Also, with the increasingly digital times, it is very common for people to work on their laptops on public wifi spots such as coffee shops. This combination makes for an incredibly vulnerable target that \emph{Firesheep} is designed to take advantage of. If this software gets into the wrong hands, it could easily be used to harm a large number of individuals. With this possible, it seems like labeling the release of \emph{Firesheep} as ethical might be a mistake. 
+Recently, a pair of researchers at Bell Labs conducted an experiment with a version of \emph{Firesheep} that they modified. They wanted to see how it could be used in a potentially harmful way. This experiment involved tracking volunteers' usage of google search with the tool. They set up \emph{Firesheep} to scan the volunteers on the open network. Then, they used a custom made handler for google.com that in addition to capturing their cookies, also tracked the destinations the users were clicking to from google searches. The two researchers were able to successfully recover up to 80 percent of the participants' personal click history \cite{show_me_your_cookie}.
+
+This proof of concept showed how \emph{Firesheep} can be used to exploit one's privacy. Google.com, the world's most visited site \cite{alexa}, is a website that is used by millions of people on a regular basis. Also, with the increasingly digital times, it is very common for people to work on their laptops on public wifi spots such as coffee shops. This combination makes for an incredibly vulnerable target that \emph{Firesheep} is designed to take advantage of. If this software gets into the wrong hands, it could easily be used to harm a large number of individuals by exposing their search data. With this possible, it seems like labeling the release of \emph{Firesheep} as ethical might be a mistake. 
 
 \section{Analysis}
-\subsection{SE Code Principle One: Public}
+\subsection{Public Principle}
 \subsubsection{SE Code 1.02}
 TODO
-\subsubsection{SE Code 1.04}
+\subsubsection{SE Code 1.04, 1.05}
 Eric Butler's purpose with the release of \emph{Firesheep} was to warn users of how insecure the websites that they regularly use are. This goal matches up with section 1.04 of the SE code, which states:
 
 \begin{quote}
   \textbf{1.04} [software engineers shall] \emph{disclose to appropriate persons or authorities any actual or potential danger to the user, the public, or the environment, that they reasonably believe to be associated with software or related documents} \cite{se_code}
 \end{quote}
 
-In this case, the "appropriate persons" are both the people who run these insecure websites and the users of these websites. The "potential danger" to the public is discussed in Butler's blog post, which details the problems associated with not using full site-wide https/ssl encryption for sessions. By not providing their users with appropriate encryption options, these sites can potentially harm them. Butler is attacking this by using his tool to "disclose" this information by showing how easily this lack of encryption can be taken advantage of. 
-\subsubsection{SE Code 1.05}
-TODO
+In this case, the "appropriate persons" are both the people who run these insecure websites and the users of these websites. The "potential danger" to the public is discussed in Butler's blog post, which details the problems associated with not using full site-wide https/ssl encryption for sessions \cite{codebutler_main}. By not providing their users with appropriate encryption options, these sites can potentially harm them. Butler is attacking this by using his tool to "disclose" this information by showing how easily this lack of encryption can be taken advantage of. Another very similar SE Code says:
+
+\begin{quote}
+  \textbf{1.05} [software engineers shall] \emph{cooperate in efforts to address matters of grave public concern caused by software, its installation, maintenance, support or documentation} \cite{se_code}
+\end{quote}
+
+These two codes state almost the same thing. The "matters of grave public concern" regarding web security are these very dangers, and Butler is addressing them with his tool. By applying these SE codes, it becomes evident that releasing \emph{Firesheep} was not only an ethical decision, but also one that needed to be made by Butler as a professional in the field of computing.
 \subsubsection{SE Code 1.08}
-TODO
-\subsection{Judgement}
+Section 1.08 of the SE Code states:
+
+\begin{quote}
+  \textbf{1.08} [software engineers shall] \emph{be encouraged to volunteer professional skills to good causes and contribute to public education concerning the discipline} \cite{se_code}
+\end{quote}
+
+As mentioned earlier, the release of \emph{Firesheep} coincided with Butler's tech talk, which was given at a conference called \emph{Toorcon} \cite{codebutler_main}. Here, Butler led a discussion on the lack of sufficient security on the web and the need for site-wide https/ssl encryption on websites. By giving this talk, Butler accordingly volunteered his "professional skills" to a good cause. His presentation was intended to educate the audience more on this subject. These actions of Eric Butler fit perfectly with this SE Code's vision of an ethical individual in the software engineering field.
+\subsection{Judgement Principle}
 \subsubsection{SE Code 4.01}
 When Eric Butler made the decision to release \emph{Firesheep}, did he consider the impact that this decision would have on others? According to the SE Code of Ethics, this is something that should have been done. It states:
 
@@ -154,14 +166,14 @@ According to the software's creator, his aim is not to threaten privacy. His int
 Unfortunately, this issue is not black and white--there is definitely a moral gray area regarding privacy here. In order to gain a bigger focus on privacy in the future, it seems as if Butler is sacrificing others' more immediate need for privacy. From a strictly utilitarianistic perspective, Butler's actions could be seen as an "overall good" that benefits human values due to the long-term outcome of the software's release. On the other hand, his actions could be seen as harmful, especially as it relates to people who are unaware of their lack of privacy on these websites.
 
 Ultimately, Butler \emph{did} have these issues in mind before he released the tool \cite{codebutler_main}. SE Code 4.01 says that software engineers should "temper their judgements" by the need to support these values \cite{se_code}. Eric Butler has indeed done this. His judgement to release \emph{Firesheep} was motivated by his efforts to support the privacy of the general "internet-using" population \cite{codebutler_main}, even if it may come at the cost of disrupting the privacy of a small set of individuals.
-\subsection{SE Code Principle Six: Profession}
+\subsection{Profession Principle}
 \subsubsection{SE Code 6.03}
 TODO
 \subsubsection{SE Code 6.06}
 TODO
 
 \section{Conclusion}
-TODO
+\emph{Firesheep} has created a storm of different opinions regarding the state of web security and the issues of privacy in general when dealing with computers. Due to the highly complex world of web security, there is definitely no purely objective answer to the question on the ethical nature of the tool's release. The point can be made, however, that the software has had an overall positive impact on the current practices of popular websites \cite{github_reaction} \cite{facebook_reaction} \cite{twitter_reaction}. Also, by applying the ACM and IEEE-CS approved \emph{Software Engineering Code of Ethics and Professional Practice} \cite{se_code}, it can be shown that Eric Butler acted ethically as a professional in the field of computing by doing so. As Butler puts it, \emph{Going forward the metric of Firesheep’s success will quickly change from amount of attention it gains, to the number of sites that adopt proper security. True success will be when Firesheep no longer works at all} \cite{codebutler_blog_2}. Hopefully, this is something that can be achieved in the near future, so that users can truly "win".
 
 % Bibliography
 \end{multicols}
