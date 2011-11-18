@@ -188,9 +188,24 @@ The transformed text of code section 4.01 is presented here as a reference for t
 Unfortunately, this issue is not black and white--there is definitely a moral gray area regarding privacy here. In order to gain a bigger focus on privacy in the future, it seems as if Butler is sacrificing others' more immediate need for privacy. From a strictly utilitarianistic perspective, Butler's actions could be seen as an "overall good" that benefits human values due to the long-term outcome of the software's release. On the other hand, his actions could be seen as harmful, especially as it relates to people who are unaware of their lack of privacy on these websites.
 
 Ultimately, Butler \emph{did} have these issues in mind before he released the tool \cite{codebutler_main}. SE Code 4.01 says that software engineers should "temper their judgements" by the need to support these values \cite{se_code}. Eric Butler has indeed done this. His judgement to release \emph{Firesheep} was motivated by his efforts to support the privacy of the general "internet-using" population \cite{codebutler_main}, even if it may come at the cost of disrupting the privacy of a small set of individuals.
+
 \subsection{Profession Principle}
 \subsubsection{SE Code 6.12}
-TODO
+Section 6.12 of the code states:
+\begin{quote}
+  \textbf{6.12} [\textbf{software engineers} shall] \emph{\textbf{express concerns} to the \textbf{people involved} when \textbf{significant violations of this Code} are detected unless this is impossible, counter-productive, or dangerous.} \cite{se_code}
+\end{quote}
+
+As Eric Butler stated both in his talk and in his blog post introducing \emph{Firesheep}, there are a number of popular websites that simply aren't doing enough to keep their users' login credentials secure \cite{toorcon_slides} \cite{codebutler_main}. The SE code applies to these websites just as much as it does to Butler. Their inability to properly secure their users is a major violation of this code. Specifically, this violates SE code section \textbf{1.03}, which states that \emph{[software engineers shall] approve software only if they have a well-founded belief that it is safe, meets specifications, passes appropriate tests, and \textbf{does not} diminish quality of life, \textbf{diminish privacy} or harm the environment.} \cite{se_code}. By not providing their users with end-to-end HTTPS encrypted sessions (even when it is a well accepted and encouraged practice), these websites are violating this code. Thus, Butler is following code section \textbf{6.12} by making this fact known to the users of these sites, as they are the "people involved". Butler intends for \emph{Firesheep} to "express concerns" by raising awareness of this issue.
+
+This is the transformed version of the code given the details relevant to this event:
+
+\begin{quote}
+  \textbf{6.12} [\textbf{Eric Butler} shall] \emph{\textbf{provide awareness} to the \textbf{users of insecure websites} when \textbf{these websites are diminishing their privacy} unless this is impossible, counter-productive, or dangerous.}
+\end{quote}
+
+An important thing to note, however, is that the code ends with \emph{shall express concerns...\textbf{unless this is impossible, counter-productive, or dangerous}}. This is an interesting topic of discussion, because it could be argued that Butler is expressing his concerns in a manner that is "counter-productive". How can he criticize these websites for not paying enough attention on privacy when his tool can be used to exploit this lack of privacy? Again, to settle this debate, I will base my analysis on the ethical system of "Utilitarianism".
+
 \subsection{Colleagues Principle}
 \subsubsection{SE Code 7.06}
 As mentioned earlier, the release of \emph{Firesheep} coincided with a presentation given at the \emph{Toorcon} conference in San Diego. \emph{Toorcon} is an conference that is held annually in which people from all over the world attend to discuss and learn about the latest information on security \cite{toorcon}. Here, the top experts on security for computing give presentations on old and new vulnerabilities to watch out for and how to protect systems from them.
