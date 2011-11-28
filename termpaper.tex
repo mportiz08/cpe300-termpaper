@@ -84,14 +84,6 @@ Currently, there are several factors that contribute to a website's insecurity: 
 
 When a major website is lacking in one of these areas, the users of that website can potentially be exploited. Thus, by implementing a handler for this site using \emph{Firesheep}, this problem can get the attention that it deserves and therefore must be addressed by the site's owners. Eric Butler believes that the use of his tool will show the users of these websites just how vulnerable they really are, which will in turn lead to a growing public outcry at this fact. He argues that this public outcry will eventually lead to users demanding major improvements from these sites, thereby justifying the release of the tool \cite{toorcon_slides}.
 
-There are several examples of this happening in the weeks after \emph{Firesheep} was released. GitHub, a website for social coding, initially was in the category of only using https/ssl encryption for paying users. Upon \emph{Firesheep}'s release, GitHub became immediately aware of the potential harm that could come to their users by not improving their security measures. In a series of three blog posts, the company describes how they acted quickly to provide full end-to-end encryption for both paying and non-paying users as a direct response to the awareness created by Butler's tool \cite{github_reaction}.
-
-Another major website to respond to \emph{Firesheep} was Facebook. Although they weren't as quick to react as GitHub, they too realized the significance of better protecting their users due to the publicity created by Butler's tool. In January 2011, Facebook implemented site-wide https/ssl encryption for their users \cite{facebook_reaction}.
-
-Twitter was another huge website that previously only used https/ssl encryption for logging in users. As of March 2011, Twitter has followed in the footsteps of GitHub and Facebook in providing their users with the ability to fully encrypt their sessions with the site \cite{twitter_reaction}.
-
-These are only some of the most publicized instances of \emph{Firesheep}'s positive influence on web security. Given these specific cases, it can be argued that Butler's goals with the project have been largely achieved. This greatly improved public awareness supports the claim that Butler's release of the tool was indeed ethical.
-
 \section{Arguments Against}
 \subsection{Breaking the Law}
 There is also an argument to be made that Eric Butler's decision to release \emph{Firesheep} was \emph{un}ethical. A major support for this argument comes from the many troubling legal issues that the software could potentially be involved in. The first major law that the use of \emph{Firesheep} could potentially conflict with is titled \emph{Fraud and Related Activity in Connection With Computers} (Title 18, Part 1, Chapter 47, Section 1030) \cite{law_1}. Joseph V. DeMarco, a former assistant U.S. attorney who \emph{specializes in representing and counseling clients on complex issues involving information privacy and security} \cite{legal_forbes} \cite{demarco}, claims this:
@@ -178,8 +170,6 @@ As mentioned earlier, \emph{Firesheep} was developed to be an add-on for the Fir
 
 So, when Butler was writing \emph{Firesheep}, he was engaged in a very technical process. Furthermore, the act of releasing the tool involved the judgement as to whether or not he should submit it to Mozilla's online add-on repository. Because of this, the phrase \textbf{decision to release Firesheep} will be substituted for the term \textbf{technical judgement} from SE Code 4.01.
 
-%By applying this code, Butler's "technical judgment" in releasing the tool can only be considered ethical if he did so under the realization that his action would "support and maintain human values". There are many "human values" that could be associated with \emph{Firesheep}'s release, but the most applicable of these to this specific situation would be the value that people place on "right to privacy". Privacy of one's own beliefs and possessions is something that most people value.
-
 The United Nations believes that the right to privacy is a basic human right. Article 12 of \emph{The Universal Declaration of Human Rights} states:
 
 \begin{quote}
@@ -194,7 +184,13 @@ The EFF (Electronic Frontier Foundation) is an established name in the world of 
 
 From their stated goals, it is clear that both the UN and the EFF believe that privacy is one of the most important major human values. So, when transforming SE Code 4.01, the phrase \textbf{people's right to privacy} will be substituted for the term \textbf{human values}.
 
-The existence of \emph{Firesheep} is undoubtedly a potential obstacle to people's privacy. The most prevalent example of this is the website facebook.com. Upwards of 40 percent of global internet users visit facebook daily \cite{alexa}. Users can upload personal photos, send personal messages to other users, and even video chat with other users on the site. As stated earlier, \emph{Firesheep} supports Facebook, which means that a user of the tool could potentially access someone Elise's personal information. This personal information is thought of as being private by the user. At first glance, it appears as if this SE code was overlooked by Butler. The use of \emph{Firesheep} could be thought of as an attack on this basic human value of privacy, since it can expose these personal items.
+The transformed text of code section 4.01 is presented here as a reference for the reader:
+
+\begin{quote}
+\textbf{4.01} [\textbf{Eric Butler} shall] \emph{temper \textbf{his decision to release Firesheep} by the need to support and maintain \textbf{people's right to privacy}.} \cite{se_code}
+\end{quote}
+
+Upwards of 40 percent of global internet users visit the website facebook.com daily \cite{alexa}. Users can upload personal photos, send personal messages to other users, and even video chat with other users on the site. This transfer of data is not necessarily something that users will want to be accessible to the general public. As stated earlier, \emph{Firesheep} supports Facebook, which means that a user of the tool could potentially access someone else's personal information. At first glance, it appears as if this SE code was overlooked by Butler. The use of \emph{Firesheep} could be thought of as an attack on this basic human value of privacy, since it can expose these personal items.
 
 The purpose of Butler's software, however, is not to attack the privacy of individuals--it is to create an awareness of the lack of privacy provided by these websites. In his blog post introducing \emph{Firesheep}, he claims:
 
@@ -204,15 +200,15 @@ The purpose of Butler's software, however, is not to attack the privacy of indiv
 
 According to the software's creator, his aim is not to threaten privacy. His intent with releasing it is actually to bring about positive change regarding privacy. Butler feels that many top websites simply aren't doing enough to protect the privacy of their users, and this is the only way to get the attention of the people who run these sites. Supporting (and maintaining) the human value of privacy through the act of improving awareness is the ultimate goal of the \emph{Firesheep} project.
 
-The transformed text of code section 4.01 is presented here as a reference for the reader:
-
-\begin{quote}
-\textbf{4.01} [\textbf{Eric Butler} shall] \emph{temper \textbf{his decision to release Firesheep} by the need to support and maintain \textbf{people's right to privacy}.} \cite{se_code}
-\end{quote}
-
 Unfortunately, this issue is not black and white--there is definitely a moral gray area regarding privacy here. In order to gain a bigger focus on privacy in the future, it seems as if Butler is sacrificing others' more immediate need for privacy. From a strictly utilitarianism perspective, Butler's actions could be seen as an "overall good" that benefits human values due to the long-term outcome of the software's release. On the other hand, his actions could be seen as harmful, especially as it relates to people who are unaware of their lack of privacy on these websites.
 
-Ultimately, Butler \emph{did} have these issues in mind before he released the tool \cite{codebutler_main}. SE Code 4.01 says that software engineers should "temper their judgments" by the need to support these values \cite{se_code}. Eric Butler has indeed done this. His judgment to release \emph{Firesheep} was motivated by his efforts to support the privacy of the general "internet-using" population \cite{codebutler_main}, even if it may come at the cost of disrupting the privacy of a small set of individuals.
+Here are some concrete examples of this overall win for the right to privacy that has resulted from the release of \emph{Firesheep}. GitHub, a website for social coding, initially only provided https/ssl encryption for paying users. Upon \emph{Firesheep}'s release, GitHub became immediately aware of the potential harm that could come to their users by not improving their security measures. In a series of three blog posts, the company describes how they acted quickly to provide full end-to-end encryption for both paying and non-paying users as a direct response to the awareness created by Butler's tool \cite{github_reaction}.
+
+Another major website to respond to \emph{Firesheep} was Facebook. Although they weren't as quick to react as GitHub, they too realized the significance of better protecting their users due to the publicity created by Butler's tool. In January 2011, Facebook implemented site-wide https/ssl encryption for their users \cite{facebook_reaction}.
+
+Twitter was another huge website that previously only used https/ssl encryption for logging in users. As of March 2011, Twitter has followed in the footsteps of GitHub and Facebook in providing their users with the ability to fully encrypt their sessions with the site \cite{twitter_reaction}.
+
+Ultimately, Butler \emph{did} have these issues regarding privacy in mind before he released the tool \cite{codebutler_main}. SE Code 4.01 says that software engineers should "temper their judgments" by the need to support these values \cite{se_code}. Butler's judgment to release \emph{Firesheep} was motivated by his efforts to support the privacy of the general "internet-using" population \cite{codebutler_main}, even if it may come at the cost of disrupting the privacy of a small set of individuals.
 
 \subsection{Profession Principle}
 The "Profession Principle" of the SE code exists as a means of conveying how professionals in the software engineering field should behave. It lists out the expected actions that a \emph{professional} software developer should take given certain circumstances. It will be used to analyze whether or not Butler acted as an ethical professional when he released his software at \emph{Toorcon}.
